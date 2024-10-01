@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    Body{
+        @apply font-plus ;
+    }
+    section{
+        @apply pt-16 pb-4 md:pt-20 ;
+    }
+    span{
+        @apply text-secondaryColor
+    }
+}
+@layer utilities{
+    .card{
+      @apply w-[251.53px] h-[279.05px] rounded-[10px] bg-textColor pt-10 pl-4 hover:scale-110 transition-all duration-300;
+    }
+    .card_title{
+        @apply text-white font-bold text-[18px] leading-[30px] mt-2;
+    }
+    .card_text{
+        @apply text-[#DDDDDD] font-normal text-[14px] text-wrap leading-[17.64px] mt-4;
+    }
+    .footer_paragraph{
+        @apply font-normal text-base text-[#20484F] mt-4 dark:text-white;
+       }
+}
